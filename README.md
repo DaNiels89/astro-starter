@@ -1,4 +1,4 @@
-# astro-minimal-starter
+# astro-postcss-starter
 
 ## Features
 

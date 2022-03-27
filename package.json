@@ -3,15 +3,19 @@
   "version": "v1.0.0",
   "private": false,
   "scripts": {
-    "start": "astro dev",
+    "postcss:watch": "postcss src/styles/global.css --dir public/styles --watch",
+    "start": "astro dev & npm run postcss:watch",
     "build": "astro build"
   },
   "devDependencies": {
-    "astro": "^0.25.2"
+    "astro": "^0.25.2",
+    "autoprefixer": "^10.4.4",
+    "postcss": "^8.4.12",
+    "postcss-cli": "^9.1.0",
+    "postcss-import": "^14.1.0"
   },
   "dependencies": {
     "@astrojs/react": "^0.0.2",
-    "autoprefixer": "^10.4.4",
     "react": "^17.0.2",
     "react-dom": "^17.0.2"
   }
