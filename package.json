@@ -4,7 +4,7 @@
   "private": false,
   "scripts": {
     "postcss:watch": "postcss src/styles/global.css --dir public/styles --watch",
-    "start": "astro dev & npm run postcss:watch",
+    "start": "astro dev",
     "build": "astro build"
   },
   "devDependencies": {

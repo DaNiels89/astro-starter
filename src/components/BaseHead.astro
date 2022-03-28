@@ -9,9 +9,9 @@ export interface Props {
   articleSchema?: boolean;
 }
 
+import "../styles/global.css"
 import ArticleSchema from "./ArticleSchema.jsx";
 import site from "../data/site.js";
-
 
 const { title, description, permalink, publishDate, ogImageUrl, canonicalURL, articleSchema } = Astro.props;
 ---
@@ -20,7 +20,6 @@ const { title, description, permalink, publishDate, ogImageUrl, canonicalURL, ar
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
 
 <link rel="icon" href="/favicon.svg">
-<link rel="stylesheet" href="/styles/global.css"/>
 <!-- Primary Meta Tags -->
 <title>{title || site.title}</title>
 <meta name="title" content={title || site.title} />
