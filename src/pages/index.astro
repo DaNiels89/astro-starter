@@ -1,13 +1,17 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 
-let title = 'Astro Minimal Starter';
+let title = 'Astro PostCSS Starter';
 let description = 'This is a starter repo for an blog built with Astro including open graph tags, canonical urls, RSS, sitemap support.';
 let permalink = 'https://example.com/';
 ---
 
 <BaseLayout title={title} description={description} permalink={permalink} canonicalURL={Astro.request.canonicalURL.href}>
-    <h1>Astro Minimal Starter</h1>
+    <h1>Astro PostCSS Starter</h1>
     <a href="/blog">Blog</a>
-    <p class="">Hallo</p>
+    <p class="">This is a test with PostCSS</p>
+    <ul class="">
+        <li class="">Autoprefixer</li>
+        <li class="">Postcss-import</li>
+    </ul>
 </BaseLayout>
